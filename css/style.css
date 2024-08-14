@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+	--gren-gray-scale-900: #002603;
+	--gren-gray-scale-800: #173b1a;
+	--gren-gray-scale-700: #2b572e;
+	--gren-gray-scale-600: #406b42;
+	--gren-gray-scale-500: #618062;
+	--gren-gray-scale-400: #7a997c;
+	--gren-gray-scale-300: #96b297;
+	--gren-gray-scale-200: #b4ccb4;
+	--gren-gray-scale-100: #dae5da;
+	--gren-gray-scale-50: #edf2ee;
+	--gray-scale-gray-–-900: #1a1a1a;
+	--gray-scale-gray-–-800: #333;
+	--gray-scale-gray-–-700: #4d4d4d;
+	--gray-scale-gray-–-600: #666;
+	--gray-scale-gray-–-500: #808080;
+	--gray-scale-gray-–-400: #999;
+	--gray-scale-gray-–-300: #b2b2b2;
+	--gray-scale-gray-–-200: #ccc;
+	--gray-scale-gray-–-100: #e6e6e6;
+	--gray-scale-gray-–-50: #f2f2f2;
+	--gray-scale-white: #fff;
+	--branding-success-bright: #84d187;
+	--branding-success: #00b207;
+	--branding-success-dark: #2c742f;
+	--branding-warning: #ff8a00;
+	--branding-error: #ea4b48;
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Segoe Script", sans-serif;
+    --third-family: "Dancing Script", sans-serif;
+}
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+body{
+    font-family: var(--font-family);
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+/* topHeader Start */
+#topHeader{
+    box-shadow: 0 1px 0 0 #e5e5e5;
+background: var(--gray-scale-white);
+padding: 12px 0; 
+}
+#topHeader .topLeft p {
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+line-height: 130%;
+color: var(--gray-scale-gray-–-600);
+}
+#topHeader .topRight select{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+line-height: 130%;
+text-align: center;
+color: var(--gray-scale-gray-–-600);
+border: none;
+}
+#topHeader form{
+    padding-right: 20px;
+    border-right: 1px solid var(--gray-scale-gray-–-100);
+}
+#topHeader .topRight a{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+line-height: 130%;
+color: var(--gray-scale-gray-–-600);
+margin-left: 20px;
+}
+/* topHeader end */
+/* middleHeader Start */
+#middleHeader{
+	padding: 24px 0;
+}
+#middleHeader .searchArea{
+	width: 80%;
+	position: relative;
+}
+#middleHeader .searchArea input{
+	width: 100%;
+	height: 45px;
+	border: 1px solid var(--gray-scale-gray-–-100);
+	border-radius: 6px 0 0 6px ;
+	padding-left: 44px ;
+
+}
+#middleHeader .searchArea span{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 20px;
+}
+#middleHeader  form button{
+	border-radius: 0 6px 6px 0;
+padding: 14px 24px;
+width: 98px;
+height: 45px;
+background-color: var(--branding-success);
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 120%;
+color: var(--gray-scale-white);
+border: none;
+}
+#middleHeader ul li{
+	 font-size: 28px; 
+	padding:  0 16px;
+	border-right:1px solid var(--gray-scale-gray-–-200) ;
+}
+#middleHeader ul li:last-child{
+	border: none;
+}
+#middleHeader ul li a{
+	color: var(--gray-scale-gray-–-900)
+}
+#middleHeader ul li a .cardIcon{
+	position: relative;
+}
+#middleHeader ul li a .cardIcon span{
+	position: absolute;
+	border: 1px solid var(--gray-scale-white);
+border-radius: 16px;
+right: -1px;
+top: -4px;
+width: 18px;
+height: 18px;
+background: var(--branding-success-dark);
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 10px;
+line-height: 18px;
+text-align: center;
+color: var(--gray-scale-white);
+}
+#middleHeader ul li a .cardText{
+	padding-left:12px ;
+}
+#middleHeader ul li a .cardText p{
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 120%;
+	color: var(--gray-scale-gray-–-700);
+}
+#middleHeader ul li a .cardText h5{
+	font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+color: var(--gray-scale-gray-–-900);
+}
+/* middleHeader End */
+ /*bottomHeader Start  */
+ #bottomHeader{
+	background-color: var(--gray-scale-gray-–-800);;
+ }
+ #bottomHeader .menu ul li{
+	padding: 19.5px 32px;
+ }
+ 
+ #bottomHeader .menu ul li a{
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 150%;
+	color: var(--gray-scale-gray-–-400);
+ }
+ #bottomHeader .menu ul li a:hover{
+	color: white;
+ }
+ #bottomHeader .contact a{
+	font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-white);
+ }
+ #bottomHeader .contact span{
+	font-family: var(--font-family);
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+color: var(--gray-scale-white);
+ }
+ /* bottomHeader end */
+ /* hero start */
+ #hero{
+	padding: 24px 0;
+ }
+ #hero .bannerSmail .banner:last-child{
+	margin-top: 24px;
+ }
+ /* hero end */
+ /* service start */
+ #service{
+	
+ }
+ #service ul li .serviceArea span{
+	color: var(--branding-success);
+	font-size: 28px;
+	margin: 0 12px;
+ }
+ #service ul li .serviceText h5{
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+	color: var(--gray-scale-gray-–-900);
+ }
+ #service ul li .serviceText p{
+	font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray-–-400);
+ }
+ #service .serviceHolder{
+	border-radius: 8px;
+	box-shadow: 0 8px 40px 0 rgba(0, 38, 3, 0.08);
+	background: var(--gray-scale-white);
+	padding: 40px;
+ }
+ /* service end */
+ /* popoler start */
+#populer .headingLeft h1{
+	font-family: var(--font-family);
+font-weight: 600;
+font-size: 20px;
+line-height: 120%;
+color: var(--gray-scale-gray-–-900);
+padding-top: 52px;
+padding-bottom: 32px;
+ }
+#populer .headingRight a h1{
+	font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: var(--branding-success);
+ }
+ #populer .headingRight a h1:hover{
+	color:var(--branding-success-dark);
+ }
+ /* popoler end */
+ /* cardBox start */
+ #cardbox {
+	padding: 16px 0px 24px 0px;
+	justify-content: space-between;
+ }
+ #cardBox  .box h5{
+	font-family: var(--font-family);
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+text-align: center;
+color: var(--gray-scale-gray-–-900);
+}
+#cardBox  .box h5:hover{
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+	text-align: center;
+	color: var(--branding-success-dark);
+}
+ #cardBox  .box{
+	border: 1px solid var(--gray-scale-gray-–-100);
+border-radius: 5px;
+margin: 16px 0;
+width: 200px;
+height: 213px;
+background: var(--gray-scale-white);
+ }
+ #cardBox .box:hover{
+	border: 1px solid var(--branding-success-dark);
+border-radius: 5px;
+padding: 16px 0px 24px 0px;
+width: 200px;
+height: 213px;
+box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
+background: var(--gray-scale-white);
+transition: 0.5s;
+ }
+ /* cardBox End */
+ /* partBox start */
+#partBox .productCard{
+	border: 1px solid var(--gray-scale-gray-–-100);
+}
+#partBox .productCard .ProductDetals{
+	padding: 12px;
+}
+#partBox .productCard .ProductDetals h4{
+	font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-gray-–-700);
+}
+#partBox .productCard .ProductDetals p{
+	font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: var(--gray-scale-gray-–-900);
+}
+#partBox .productCard .ProductDetals p span{
+	font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-decoration: line-through;
+color: var(--gray-scale-gray-–-400);
+}
+#partBox .productCard .ProductDetals .rating{
+	color: var(--branding-warning);
+}
+.productCard .cardBtn{
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background-color: var(--gray-scale-gray-–-50);
+	display: block;
+	color: var(--gray-scale-gray-–-800);
+	border-radius: 50% ;
+	transition: 0.2s ease-in;
+}
+.productCard:hover .cardBtn{
+	border-radius: 100%;
+background-color: var(--branding-success);
+color: white;
+}
+.productCard .productImage{
+	position: relative;
+}
+.productCard .productImage P{
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	border-radius: 4px;
+padding: 3px 8px;
+background-color: var(--branding-error);
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: var(--gray-scale-white);
+}
+.productCard .productImage .quickIcon{
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	
+}
+.productCard .productImage .quickIcon a{
+	width: 40px;
+	height: 40px;
+	display: block;
+	line-height: 40px;
+	text-align: center;
+	font-size:20px;
+	border-radius: 100%;
+box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
+background: var(--gray-scale-white);
+color: var(--gray-scale-gray-–-900);
+margin-bottom: 6px;
+}
+
+.productCard .productImage .quickIcon li{
+	transform: translateX(-80%);
+	opacity: 0;
+}
+.productCard:hover .productImage .quickIcon	li{
+	transform: translateX(0);
+	transition: 0.3s ease-out;
+	
+	opacity: 1;
+}
+.productCard:hover .productImage .quickIcon	li:last-child{
+	transition-delay:0.2s ;
+	
+}
+ /* partBox End */
+/* bestDetals start */
+#BestDeals{
+	padding: 86px 0;
+}
+.btn{
+	border-radius: 43px;
+padding: 14px 32px;
+background-color: var(--gray-scale-white);
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 120%;
+text-align: justify;
+color: var(--branding-success);
+margin: 24px 0;
+}
+#BestDeals .Deals{
+	background-image: url(../img/Rectangle\ 54.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 536px;
+	border-radius: 8px;
+	text-align: center;
+	padding: 35px 0;
+}
+#BestDeals .Deals p{
+	font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: center;
+color: var(--gray-scale-white);
+}
+#BestDeals .Deals h1{
+	font-family: var(--font-family);
+font-weight: 600;
+font-size: 40px;
+line-height: 120%;
+text-align: center;
+color: var(--gray-scale-white);
+padding: 8px 0;
+}
+#BestDeals .Deals .time{
+	font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+line-height: 150%;
+text-align: center;
+color: var(--gray-scale-white);
+padding: 2px 0 0 0;
+}
+
+#BestDeals .Deals .time .timeing{
+	margin-left: 130px;
+	width: 290px;
+height: 52px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 40px;
+line-height: 150%;
+text-align: center;
+color: var(--gray-scale-white);
+}	
+#BestDeals .Dealstwo{
+	background-image: url(../img/Rectangle\ 54\ \(1\).png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 536px;
+	border-radius: 8px;
+	text-align: center;
+	padding: 35px 0;
+}
+#BestDeals .Dealstwo p{
+	font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: center;
+color: var(--gray-scale-white);
+}
+#BestDeals .Dealstwo h1{
+	font-family: var(--font-family);
+font-weight: 600;
+font-size: 40px;
+line-height: 120%;
+text-align: center;
+color: var(--gray-scale-white);
+}
+#BestDeals .Dealstwo h5{
+	font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+text-align: center;
+color: var(--gray-scale-white);
+}
+#BestDeals .Dealstwo h5 span{
+	font-family: var(--font-family);
+font-weight: 600;
+font-size: 20px;
+line-height: 150%;
+text-align: center;
+color: var(--branding-warning);
+}
+#BestDeals .Dealsthree{
+	background-image: url(../img/Rectangle\ 54\ \(2\).png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 536px;
+	border-radius: 8px;
+	text-align: center;
+	padding: 35px 0;
+}
+#BestDeals .Dealsthree p{
+	font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: center;
+color: var(--gray-scale-gray-–-900);
+}
+#BestDeals .Dealsthree h1{
+	font-family: var(--font-family);
+font-weight: 600;
+font-size: 40px;
+line-height: 120%;
+text-align: center;
+color: var(--gray-scale-gray-–-900);
+}
+#BestDeals .Dealsthree h5{
+	font-family: var(--font-family);
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+text-align: center;
+color: var(--gray-scale-gray-–-900);
+}
+#BestDeals .Dealsthree h5 span{
+	border-radius: 5px;
+padding: 6px 12px;
+background: var(--gray-scale-gray-–-900);
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 150%;
+text-align: center;
+color: #fcc900;
+}
+/* bestDetals end */
+
+
+
